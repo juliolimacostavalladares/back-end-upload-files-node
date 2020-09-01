@@ -1,9 +1,9 @@
 module.exports = {
-  database: "heroku_17c58d5e01f1737",
-  username: "b03c107aef755f",
-  password: "c65360ca",
-  host: "us-cdbr-east-02.cleardb.com",
-  dialect: "mysql",
+  database: process.env.GSQL_DATABASE,
+  username: process.env.GSQL_USERNAME,
+  password: process.env.GSQL_PASSWORD,
+  host: process.env.GSQL_HOST,
+  dialect: process.env.GSQL_DIALECT,
   define: {
     timestamps: true,
   },
