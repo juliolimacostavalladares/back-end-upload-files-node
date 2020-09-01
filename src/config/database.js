@@ -1,8 +1,8 @@
 module.exports = {
-  database: "larfraterno",
-  username: "lar-fraterno",
-  password: "Elefante99**",
-  host: "34.66.26.212",
+  database: "heroku_17c58d5e01f1737",
+  username: "b03c107aef755f",
+  password: "c65360ca",
+  host: "us-cdbr-east-02.cleardb.com",
   dialect: "mysql",
   define: {
     timestamps: true,
