@@ -24,10 +24,10 @@ routes.delete("/upload/:id", UploadedController.deleteUploads);
 routes.post("/register", AuthController.regiterUsers);
 routes.post("/authenticate", AuthController.authenticationUsers);
 routes.get("/users", AuthController.findAllUsers);
-routes.get("/users/:id", AuthController.findOneUsers);
+routes.get("/users/:id", authMiddleware, AuthController.findOneUsers);
 
 // Rotas para autenticação dos usuários
-routes.get("/validate", authMiddleware, (req, res) => {
+routes.get("/validate", (req, res) => {
   res.send({ home: true });
 });
 
