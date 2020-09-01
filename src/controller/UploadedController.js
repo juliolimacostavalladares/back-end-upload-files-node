@@ -13,7 +13,7 @@ module.exports = {
     res.send(upload);
   },
 
-  async deleteUploads(req, res) {
+  async deleteUpload(req, res) {
     await Uploads.destroy({
       where: {
         id: req.params.id,

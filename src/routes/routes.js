@@ -17,7 +17,7 @@ routes.post(
 );
 routes.get("/list-url", UploadedController.listUrls);
 routes.get("/upload", UploadedController.findAllUploads);
-routes.delete("/upload/:id", UploadedController.deleteUploads);
+routes.delete("/upload/:id", UploadedController.deleteUpload);
 
 // Rotas de criação e listagem de usuários
 
