@@ -47,7 +47,6 @@ module.exports = {
     const token = jwt.sign({ id: userData.id }, process.env.TOKEN, {
       expiresIn: 604800,
     });
-    consloe.log(process.env.TOKEN);
     res.send({ userData, token });
   },
 
