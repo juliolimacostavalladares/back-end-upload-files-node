@@ -44,10 +44,13 @@ module.exports = {
         exclude: ["password"],
       },
     });
-    const token = jwt.sign({ id: userData.id }, process.env.TOKEN, {
-      expiresIn: 604800,
-    });
-    consloe.log(process.env.TOKEN);
+    const token = jwt.sign(
+      { id: userData.id },
+      "755038a29d9cabe48255238a4ee01373",
+      {
+        expiresIn: 604800,
+      }
+    );
     res.send({ userData, token });
   },
 
